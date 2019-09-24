@@ -6,7 +6,7 @@ folders.forEach(folder => {
   console.log(folder);
   describe(`******** Context: ${folder} ********`, function() {
     it(`Should pass the ${folder} tests`, () => {
-      assert(shell.exec(`cd ${folder} ; npm test ; cd -`).code == 0);
+      assert(shell.exec(`cd ${folder} ; npm test ; R=$? ; cd - ; exit $R`).code == 0);
     });
   });
 });

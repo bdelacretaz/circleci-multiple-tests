@@ -1,4 +1,8 @@
 const assert = require('assert')
 describe('Testing one', () => {
-  it('should be true in one', () => { assert(true); });
+  if(Math.random() > 0.5) {
+    it('is passing in one', () => assert(true));
+  } else {
+    it('is failing in one', () => assert(false));
+  }
 });
