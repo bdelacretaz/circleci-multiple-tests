@@ -1,0 +1,21 @@
+{
+  "name": "mocha-dynamic-tests",
+  "version": "1.0.0",
+  "description": "Testing dynamic generation of test cases",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "mocha --exit test/**/*"
+  },
+  "author": "",
+  "license": "Apache-2.0",
+  "devDependencies": {
+    "assert": "^2.0.0",
+    "mocha": "^6.2.0"
+  },
+  "dependencies": {
+    "shelljs": "^0.8.3"
+  }
+}
