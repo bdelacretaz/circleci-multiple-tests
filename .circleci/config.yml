@@ -11,17 +11,18 @@ jobs:
           name: update-npm
           command: 'sudo npm install -g npm@6'
       - restore_cache:
-          key: dependency-cache-{{ checksum "package.json" }}
+          key: deps-and-checkouts-cache-{{ checksum "package.json" }}
       - run:
           name: install-npm-dependencies
           command: npm install
       - save_cache:
-          key: dependency-cache-{{ checksum "package.json" }}
+          key: deps-and-checkouts-cache-{{ checksum "package.json" }}
           paths:
             - ./node_modules
+            - ./checkouts
       - run:
           name: test
-          command: npm test
+          command: npm run test-other
       - store_artifacts:
           path: test-results.xml
           prefix: tests
