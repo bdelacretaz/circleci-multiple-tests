@@ -37,3 +37,5 @@ jobs:
           name: test helix-log
           command: npm run test-repo git@github.com:adobe/helix-log.git
           when: always
+      - store_test_results:
+          path: test-results.xml
