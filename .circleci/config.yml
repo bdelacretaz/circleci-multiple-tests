@@ -21,8 +21,14 @@ jobs:
             - ./node_modules
             - ./checkouts
       - run:
-          name: test
-          command: npm run test-other
+          name: test helix-static
+          command: npm run test-repo git@github.com:adobe/helix-static.git
+      - run:
+          name: test helix-example-advanced
+          command: npm run test-repo git@github.com:adobe/helix-static.git
+      - run:
+          name: test helix-log
+          command: npm run test-repo git@github.com:adobe/helix-log.git
       - store_artifacts:
           path: test-results.xml
           prefix: tests

@@ -1,5 +1,5 @@
 #!/bin/bash
-REPOS="git@github.com:adobe/helix-static.git git@github.com:adobe/helix-example-advanced.git git@github.com:adobe/helix-log.git"
+REPOS=$*
 
 [[ -d checkouts ]] || mkdir checkouts 
 pushd checkouts
