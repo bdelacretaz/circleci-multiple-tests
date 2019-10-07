@@ -5,6 +5,7 @@ jobs:
     working_directory: ~/funky-claude
     docker:
       - image: circleci/node:10.6
+    parallelism: 4      
     steps:
       - checkout
       - run:
