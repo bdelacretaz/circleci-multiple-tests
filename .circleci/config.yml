@@ -24,8 +24,11 @@ jobs:
           name: test helix-static
           command: npm run test-repo git@github.com:adobe/helix-static.git
       - run:
+          name: test helix-example-basic
+          command: npm run test-repo git@github.com:adobe/helix-example-basic.git
+      - run:
           name: test helix-example-advanced
-          command: npm run test-repo git@github.com:adobe/helix-static.git
+          command: npm run test-repo git@github.com:adobe/helix-example-advanced.git
       - run:
           name: test helix-log
           command: npm run test-repo git@github.com:adobe/helix-log.git
