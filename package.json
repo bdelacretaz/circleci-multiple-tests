@@ -1,22 +1,14 @@
 {
   "name": "mocha-dynamic-tests",
   "version": "1.0.0",
-  "description": "Testing dynamic generation of test cases",
+  "description": "Experimenting with running tests from multiple repo with CircleCI",
   "main": "index.js",
   "directories": {
     "test": "test"
   },
   "scripts": {
-    "test": "mocha --exit test/**/*",
     "test-repo": "./test-multiple-repos.sh"
   },
   "author": "",
-  "license": "Apache-2.0",
-  "devDependencies": {
-    "assert": "^2.0.0",
-    "mocha": "^6.2.1"
-  },
-  "dependencies": {
-    "shelljs": "^0.8.3"
-  }
+  "license": "Apache-2.0"
 }

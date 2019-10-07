@@ -1,8 +1,6 @@
-mocha-dynamic-tests
+circleci-multiple-tests
 ===
 
-[![CircleCI](https://img.shields.io/circleci/project/github/bdelacretaz/mocha-dynamic-test.svg)](https://circleci.com/gh/bdelacretaz/mocha-dynamic-test)
+[![CircleCI](https://img.shields.io/circleci/project/github/bdelacretaz/circleci-multiple-tests.svg)](https://circleci.com/gh/bdelacretaz/circleci-multiple-tests)
 
-Experimenting with running multiple "npm test" sets in a loop
-from a master folder.
-
+Experimenting with running tests from multiple repo with CircleCI.
